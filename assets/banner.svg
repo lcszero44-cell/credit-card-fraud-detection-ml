@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 380" width="1280" height="380" role="img" aria-label="Credit Card Fraud Detection — Imbalanced ML, Threshold Tuning and SHAP XAI">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050816"/>
+      <stop offset="50%" stop-color="#0B1228"/>
+      <stop offset="100%" stop-color="#120826"/>
+    </linearGradient>
+    <radialGradient id="glowCyan" cx="76%" cy="48%" r="42%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.22"/>
+      <stop offset="55%" stop-color="#6C2BD9" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#050816" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowRed" cx="84%" cy="32%" r="24%">
+      <stop offset="0%" stop-color="#FF2E63" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#FF2E63" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accentBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="50%" stop-color="#7B61FF"/>
+      <stop offset="100%" stop-color="#FF2E63"/>
+    </linearGradient>
+    <linearGradient id="cardTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B2A4A"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="cardSideL" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0E294B"/>
+      <stop offset="100%" stop-color="#081428"/>
+    </linearGradient>
+    <linearGradient id="cardSideR" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1B4B"/>
+      <stop offset="100%" stop-color="#090D1C"/>
+    </linearGradient>
+    <linearGradient id="cubeCyanTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="cubeRedTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5E8A"/>
+      <stop offset="100%" stop-color="#E11D48"/>
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#6366F1" stop-opacity="0.85"/>
+    </linearGradient>
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="isoGrid" width="48" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 0 14 L 24 0 L 48 14 L 24 28 Z" fill="none" stroke="#1E293B" stroke-width="0.6" opacity="0.45"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="380" rx="18" fill="url(#bgGrad)"/>
+  <rect width="1280" height="380" rx="18" fill="url(#isoGrid)"/>
+  <rect width="1280" height="380" rx="18" fill="url(#glowCyan)"/>
+  <rect width="1280" height="380" rx="18" fill="url(#glowRed)"/>
+  <rect x="1.5" y="1.5" width="1277" height="377" rx="17" fill="none" stroke="#1E293B" stroke-width="1.5"/>
+
+  <!-- Top Neon Hairline -->
+  <rect x="44" y="28" width="1192" height="3" rx="1.5" fill="url(#accentBar)" opacity="0.9"/>
+
+  <!-- Left Content Column -->
+  <g font-family="Segoe UI, Inter, -apple-system, BlinkMacSystemFont, Roboto, sans-serif">
+    <!-- Status Badge -->
+    <rect x="48" y="54" width="332" height="28" rx="14" fill="#0F172A" stroke="#00F0FF" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="66" cy="68" r="4.5" fill="#00F0FF" filter="url(#neonGlow)"/>
+    <text x="80" y="72.5" font-size="11.5" font-weight="700" letter-spacing="1.6" fill="#7DD3FC">BOOTCAMP BRADESCO · DIO · RISK ML</text>
+
+    <!-- Main Title -->
+    <text x="48" y="132" font-size="42" font-weight="800" letter-spacing="0.8" fill="#F8FAFC">CREDIT CARD</text>
+    <text x="48" y="178" font-size="42" font-weight="800" letter-spacing="0.8" fill="url(#accentBar)">FRAUD DETECTION</text>
+
+    <!-- Subtitle -->
+    <text x="48" y="214" font-size="15.5" font-weight="600" letter-spacing="1.4" fill="#94A3B8">IMBALANCED ML  //  THRESHOLD TUNING  //  SHAP XAI</text>
+
+    <!-- Technical Metric Pills -->
+    <g transform="translate(48, 240)">
+      <rect x="0" y="0" width="166" height="58" rx="10" fill="#0B132B" stroke="#1E293B" stroke-width="1.2"/>
+      <text x="14" y="22" font-size="10.5" font-weight="700" letter-spacing="1.1" fill="#64748B">FRAUD RATE</text>
+      <text x="14" y="45" font-size="19" font-weight="800" fill="#FF2E63">0.172%</text>
+      <text x="95" y="45" font-size="11" font-weight="600" fill="#94A3B8">284.8k tx</text>
+
+      <rect x="180" y="0" width="182" height="58" rx="10" fill="#0B132B" stroke="#1E293B" stroke-width="1.2"/>
+      <text x="194" y="22" font-size="10.5" font-weight="700" letter-spacing="1.1" fill="#64748B">DECISION THRESHOLD</text>
+      <text x="194" y="45" font-size="19" font-weight="800" fill="#00F0FF">0.50 → 0.30</text>
+
+      <rect x="376" y="0" width="212" height="58" rx="10" fill="#0B132B" stroke="#1E293B" stroke-width="1.2"/>
+      <text x="390" y="22" font-size="10.5" font-weight="700" letter-spacing="1.1" fill="#64748B">CORE STACK</text>
+      <text x="390" y="45" font-size="14" font-weight="700" fill="#E2E8F0">XGBoost · RF · SMOTE · SHAP</text>
+    </g>
+
+    <!-- Bottom Caption -->
+    <text x="48" y="338" font-size="12" font-weight="500" letter-spacing="0.6" fill="#64748B">End-to-End Anomaly Detection Pipeline · Zero Data Leakage · Production Modular Architecture</text>
+  </g>
+
+  <!-- Right Side: 3D Isometric Cyber Scene -->
+  <g transform="translate(740, 42)">
+    <!-- Isometric Base Platform -->
+    <polygon points="240,284 460,180 240,76 20,180" fill="#091124" stroke="#1E3A5F" stroke-width="1.5"/>
+    <polygon points="20,180 240,284 240,302 20,198" fill="url(#cardSideL)" stroke="#1E3A5F" stroke-width="1"/>
+    <polygon points="460,180 240,284 240,302 460,198" fill="url(#cardSideR)" stroke="#312E81" stroke-width="1"/>
+
+    <!-- Platform Telemetry Circuit Lines -->
+    <polyline points="72,180 140,148 188,170 240,146" fill="none" stroke="#00F0FF" stroke-width="1.4" stroke-opacity="0.55"/>
+    <polyline points="292,226 355,196 392,213" fill="none" stroke="#7B61FF" stroke-width="1.4" stroke-opacity="0.65"/>
+    <polyline points="240,108 308,140 356,118" fill="none" stroke="#FF2E63" stroke-width="1.4" stroke-opacity="0.65"/>
+
+    <!-- Isometric 3D Credit Card Slab (floating center-left) -->
+    <g transform="translate(88, 92)">
+      <!-- Shadow -->
+      <polygon points="10,108 168,34 260,78 102,152" fill="#020617" opacity="0.65"/>
+      <!-- Card Body Top -->
+      <polygon points="0,84 158,10 250,54 92,128" fill="url(#cardTop)" stroke="#38BDF8" stroke-width="1.6"/>
+      <!-- Card Edge Left -->
+      <polygon points="0,84 92,128 92,138 0,94" fill="#0E294B" stroke="#0284C7" stroke-width="1"/>
+      <!-- Card Edge Right -->
+      <polygon points="92,128 250,54 250,64 92,138" fill="#1E1B4B" stroke="#6366F1" stroke-width="1"/>
+      <!-- EMV Gold Chip (isometric) -->
+      <polygon points="48,74 74,62 94,71 68,83" fill="#F59E0B" stroke="#FDE68A" stroke-width="1"/>
+      <!-- Card Data Stripes -->
+      <line x1="78" y1="100" x2="174" y2="55" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" opacity="0.75"/>
+      <line x1="94" y1="108" x2="152" y2="81" stroke="#94A3B8" stroke-width="2.2" stroke-linecap="round" opacity="0.55"/>
+      <!-- Anomaly Pulse Ring -->
+      <ellipse cx="186" cy="52" rx="18" ry="10" fill="none" stroke="#FF2E63" stroke-width="2" filter="url(#neonGlow)"/>
+      <circle cx="186" cy="52" r="4" fill="#FF2E63"/>
+    </g>
+
+    <!-- 3D Isometric Feature Bars (SHAP Impact Pillars) -->
+    <!-- Pillar 1: Normal (Cyan) -->
+    <g transform="translate(328, 128)">
+      <polygon points="0,34 20,24 40,34 20,44" fill="url(#cubeCyanTop)"/>
+      <polygon points="0,34 20,44 20,86 0,76" fill="#0369A1"/>
+      <polygon points="40,34 20,44 20,86 40,76" fill="#0C4A6E"/>
+    </g>
+    <!-- Pillar 2: Medium (Violet) -->
+    <g transform="translate(370, 96)">
+      <polygon points="0,42 20,32 40,42 20,52" fill="#A78BFA"/>
+      <polygon points="0,42 20,52 20,118 0,108" fill="#6D28D9"/>
+      <polygon points="40,42 20,52 20,118 40,108" fill="#4C1D95"/>
+    </g>
+    <!-- Pillar 3: Fraud Alert Spike V14/V17 (Neon Red) -->
+    <g transform="translate(412, 48)">
+      <polygon points="0,44 20,34 40,44 20,54" fill="url(#cubeRedTop)" filter="url(#neonGlow)"/>
+      <polygon points="0,44 20,54 20,166 0,156" fill="#BE123C"/>
+      <polygon points="40,44 20,54 20,166 40,156" fill="#881337"/>
+    </g>
+
+    <!-- Floating Holographic Shield & SHAP Node -->
+    <g transform="translate(216, 12)">
+      <path d="M 38 6 L 70 18 L 70 46 C 70 67 56 83 38 92 C 20 83 6 67 6 46 L 6 18 Z" fill="#0B132B" stroke="url(#shieldGrad)" stroke-width="2.4" filter="url(#neonGlow)"/>
+      <path d="M 24 49 L 34 59 L 54 37" fill="none" stroke="#00F0FF" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Mini Telemetry HUD Card -->
+    <g transform="translate(24, 24)" font-family="Consolas, Menlo, monospace">
+      <rect x="0" y="0" width="166" height="66" rx="8" fill="#0B132B" fill-opacity="0.92" stroke="#1E3A5F" stroke-width="1.2"/>
+      <text x="12" y="20" font-size="10" fill="#7DD3FC">SHAP TOP SIGNALS</text>
+      <text x="12" y="37" font-size="10.5" fill="#FF5E8A">V14  +3.42  ▲ RISK</text>
+      <text x="12" y="53" font-size="10.5" fill="#00F0FF">V17  +2.85  ▲ RISK</text>
+    </g>
+
+    <!-- Threshold HUD Tag -->
+    <g transform="translate(298, 232)" font-family="Consolas, Menlo, monospace">
+      <rect x="0" y="0" width="164" height="44" rx="8" fill="#0B132B" fill-opacity="0.92" stroke="#FF2E63" stroke-opacity="0.6" stroke-width="1.2"/>
+      <text x="12" y="18" font-size="10" fill="#94A3B8">ALERT ENGINE</text>
+      <text x="12" y="34" font-size="11" font-weight="700" fill="#FF5E8A">P(Fraud) ≥ 0.30 → BLOCK</text>
+    </g>
+  </g>
+</svg>
