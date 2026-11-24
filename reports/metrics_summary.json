@@ -1,0 +1,163 @@
+{
+  "dataset": {
+    "total_transactions": 284807,
+    "legitimate_count": 284315,
+    "fraud_count": 492,
+    "fraud_rate_pct": 0.1727,
+    "dummy_accuracy_pct": 99.8273,
+    "train_size": 227845,
+    "test_size": 56962,
+    "train_frauds": 394,
+    "test_frauds": 98
+  },
+  "model_benchmark": [
+    {
+      "Modelo": "XGBoost + SMOTE",
+      "Recall (Fraude)": 0.826530612244898,
+      "Precision (Fraude)": 0.81,
+      "F1-Score (Fraude)": 0.8181818181818182,
+      "ROC-AUC": 0.9815085115362971,
+      "PR-AUC": 0.870686270938062,
+      "TP": 81,
+      "FP": 19,
+      "FN": 17,
+      "Tempo Treino (s)": 6.28
+    },
+    {
+      "Modelo": "XGBoost (scale_pos_weight)",
+      "Recall (Fraude)": 0.8367346938775511,
+      "Precision (Fraude)": 0.7884615384615384,
+      "F1-Score (Fraude)": 0.8118811881188119,
+      "ROC-AUC": 0.9797791795390075,
+      "PR-AUC": 0.8658439725414793,
+      "TP": 82,
+      "FP": 22,
+      "FN": 16,
+      "Tempo Treino (s)": 7.23
+    },
+    {
+      "Modelo": "Random Forest (Balanced)",
+      "Recall (Fraude)": 0.7857142857142857,
+      "Precision (Fraude)": 0.927710843373494,
+      "F1-Score (Fraude)": 0.850828729281768,
+      "ROC-AUC": 0.9666953303549896,
+      "PR-AUC": 0.8552812443992923,
+      "TP": 77,
+      "FP": 6,
+      "FN": 21,
+      "Tempo Treino (s)": 25.59
+    },
+    {
+      "Modelo": "Logistic Regression (Baseline)",
+      "Recall (Fraude)": 0.6632653061224489,
+      "Precision (Fraude)": 0.8024691358024691,
+      "F1-Score (Fraude)": 0.7262569832402235,
+      "ROC-AUC": 0.9675421413641427,
+      "PR-AUC": 0.7396738240506724,
+      "TP": 65,
+      "FP": 16,
+      "FN": 33,
+      "Tempo Treino (s)": 0.62
+    },
+    {
+      "Modelo": "XGBoost + RandomUnderSampler",
+      "Recall (Fraude)": 0.8877551020408163,
+      "Precision (Fraude)": 0.4223300970873786,
+      "F1-Score (Fraude)": 0.5723684210526315,
+      "ROC-AUC": 0.982637951776096,
+      "PR-AUC": 0.718181820143367,
+      "TP": 87,
+      "FP": 119,
+      "FN": 11,
+      "Tempo Treino (s)": 1.28
+    },
+    {
+      "Modelo": "Logistic Regression (Balanced)",
+      "Recall (Fraude)": 0.9183673469387755,
+      "Precision (Fraude)": 0.03706754530477759,
+      "F1-Score (Fraude)": 0.07125890736342043,
+      "ROC-AUC": 0.9751177711517921,
+      "PR-AUC": 0.7116662792007588,
+      "TP": 90,
+      "FP": 2338,
+      "FN": 8,
+      "Tempo Treino (s)": 1.04
+    }
+  ],
+  "grid_search": {
+    "best_cv_recall": 0.8198,
+    "best_params": {
+      "classifier__max_depth": 5,
+      "classifier__min_child_weight": 1,
+      "classifier__n_estimators": 180
+    },
+    "test_roc_auc": 0.9786,
+    "test_pr_auc": 0.8601
+  },
+  "threshold_comparison": {
+    "threshold_0_50": {
+      "Threshold": 0.5,
+      "Recall": 0.8469387755102041,
+      "Precision": 0.7545454545454545,
+      "F1-Score": 0.7980769230769231,
+      "TP (Fraudes Bloqueadas)": 83,
+      "FN (Fraudes Perdidas)": 15,
+      "FP (Alarmes Falsos)": 27,
+      "Taxa Alarme Falso (%)": 0.04748171074845245
+    },
+    "threshold_0_30": {
+      "Threshold": 0.3,
+      "Recall": 0.8673469387755102,
+      "Precision": 0.6343283582089553,
+      "F1-Score": 0.7327586206896551,
+      "TP (Fraudes Bloqueadas)": 85,
+      "FN (Fraudes Perdidas)": 13,
+      "FP (Alarmes Falsos)": 49,
+      "Taxa Alarme Falso (%)": 0.08617051209904333
+    },
+    "extra_frauds_caught": 2,
+    "extra_false_positives": 22
+  },
+  "shap_top_10_features": [
+    {
+      "feature": "V14",
+      "mean_abs_shap": 1.8801
+    },
+    {
+      "feature": "V4",
+      "mean_abs_shap": 1.6533
+    },
+    {
+      "feature": "V12",
+      "mean_abs_shap": 0.9175
+    },
+    {
+      "feature": "V10",
+      "mean_abs_shap": 0.7593
+    },
+    {
+      "feature": "V11",
+      "mean_abs_shap": 0.4586
+    },
+    {
+      "feature": "V3",
+      "mean_abs_shap": 0.3864
+    },
+    {
+      "feature": "V16",
+      "mean_abs_shap": 0.3754
+    },
+    {
+      "feature": "V8",
+      "mean_abs_shap": 0.3616
+    },
+    {
+      "feature": "V17",
+      "mean_abs_shap": 0.3272
+    },
+    {
+      "feature": "V26",
+      "mean_abs_shap": 0.3116
+    }
+  ]
+}
