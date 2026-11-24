@@ -1,0 +1,36 @@
+# Datasets & raw data (proibição rigorosa de arquivos > 100MB no Git)
+*.csv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.pkl
+*.joblib
+data/
+datasets/
+
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python bytecode & caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# IDE / OS artifacts
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
